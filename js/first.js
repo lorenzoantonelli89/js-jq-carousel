@@ -39,3 +39,11 @@ function init() {
 }
 
 $(document).ready(init);
+
+$(document).keydown(function (eventObject) {
+    if (eventObject.which == 37) {
+        $('.prev').click();
+    } else if (eventObject.which == 39) {
+        $('.next').click();
+    }
+});
